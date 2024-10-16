@@ -4,18 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06ff971f-744a-4b4d-8d1a-654bcdb7100f" name="Changes" comment="" />
+    <list default="true" id="06ff971f-744a-4b4d-8d1a-654bcdb7100f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/DataHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/ServerResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/exceptions/ApiException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/exceptions/ServerException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/data/constants/ServerStatuses.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/wrappers/AllBreeds.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/Tests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/api/ApiHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/ApiHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data/constants/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data/constants/EndPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Breed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Breed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/AppTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2nTjQGYJpYeTVQrqZQBDKm93yi8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -27,9 +50,69 @@
   "keyToString": {
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.Tests.testGettingAllBreeds.executor": "Debug",
+    "TestNG.Tests2.testGettingAllBreeds.executor": "Debug",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Rishat/IdeaProjects/testApi/src/main/java"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rishat\IdeaProjects\testApi\src\main\java" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="api.exceptions" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="api.exceptions" />
+      <recent name="org.example" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.Tests.testGettingAllBreeds">
+    <configuration name="Tests2.testGettingAllBreeds" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testApi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests2" />
+      <option name="METHOD_NAME" value="testGettingAllBreeds" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tests.testGettingAllBreeds" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="testApi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.Tests" />
+      <option name="METHOD_NAME" value="testGettingAllBreeds" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.Tests.testGettingAllBreeds" />
+        <item itemvalue="TestNG.Tests2.testGettingAllBreeds" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -40,5 +123,26 @@
       <updated>1729003943472</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/Tests2.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/Tests.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="TestNG">
+        <watch expression="((com.google.gson.internal.LinkedTreeMap)serverResponse.message).entrySet().toArray()[0]" custom="com.google.gson.internal.LinkedTreeMap" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
