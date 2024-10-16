@@ -1,9 +1,21 @@
-package org.example.entity;
+package entity;
 
-import java.util.ArrayList;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NonNull;
+
 import java.util.List;
 
+@AllArgsConstructor
+@Data
 public class Breed {
+
+    @NonNull
     private String name;
-    List<String> subBreed = new ArrayList<>();
+
+    private List<String> subBreed;
+
+    public boolean isHasSubBreed() {
+        return subBreed.isEmpty();
+    }
 }
