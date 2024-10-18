@@ -45,4 +45,15 @@ public class ApiHelper {
 
         return response;
     }
+
+    public static Response getPutRequestYandex(String endpoint) {
+        Response response = given()
+                .accept(ContentType.ANY)
+                .header(EndPointsYandex.AUTHORIZATION, EndPointsYandex.AUTHORIZATION_TOKEN)
+                .log().all()
+                .contentType(ContentType.JSON)
+                .put(endpoint);
+
+        return response;
+    }
 }

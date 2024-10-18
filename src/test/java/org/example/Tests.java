@@ -5,10 +5,12 @@ import api.YandexDataHelper;
 import api.exceptions.ApiException;
 import api.exceptions.ServerException;
 import entity.Breed;
+import org.apache.commons.lang3.RandomUtils;
 import org.testng.annotations.Test;
 import testObject.TestObject;
 import utils.Util;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 public class Tests {
@@ -55,13 +57,24 @@ public class Tests {
         System.out.println(new Util().parseImageName("https://images.dog.ceo/breeds/hound-basset/n02088238_9626.jpg"));
     }
 
-    @Test
-    public void testYandexUpload() throws ApiException {
-        YandexDataHelper.uploadFileToYandexDiskByUrl("https://images.dog.ceo/breeds/hound-basset/n02088238_9626.jpg");
-    }
+//    @Test
+//    public void testYandexUpload() throws ApiException {
+//        YandexDataHelper.uploadFileToYandexDiskByUrl("https://images.dog.ceo/breeds/hound-basset/n02088238_9626.jpg");
+//    }
 
     @Test
     public void testObject() throws ApiException, ServerException {
         new TestObject().testMe("hound");
+    }
+
+    @Test
+    public void testTime() {
+        System.out.println("test_" + System.currentTimeMillis() + "_" + RandomUtils.nextInt(1, 1000));
+        System.out.println("test_" + System.currentTimeMillis() + "_" + RandomUtils.nextInt(1, 1000));
+        System.out.println("test_" + System.currentTimeMillis() + "_" + RandomUtils.nextInt(1, 1000));
+        System.out.println("test_" + System.currentTimeMillis() + "_" + RandomUtils.nextInt(1, 1000));
+        System.out.println("test_" + System.currentTimeMillis() + "_" + RandomUtils.nextInt(1, 1000));
+        System.out.println("test_" + System.currentTimeMillis() + "_" + RandomUtils.nextInt(1, 1000));
+
     }
 }

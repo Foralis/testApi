@@ -149,7 +149,7 @@ public class DogDataHelper {
                 .stream()
                 .filter(i -> !i.isHasSubBreed())
                 .findFirst()
-                .orElseThrow(() -> new TestException("There is no breed without sub-breed"))
+                .orElseThrow(() -> new TestException("There is no breed"))
                 .getName();
     }
 }

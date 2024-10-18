@@ -4,6 +4,7 @@ import api.DogDataHelper;
 import api.YandexDataHelper;
 import api.exceptions.ApiException;
 import api.exceptions.ServerException;
+import utils.Util;
 
 import java.util.List;
 
@@ -15,8 +16,10 @@ public class TestObject {
             System.out.println(image);
         }
 
+        String folderName = new Util().generateFolderName();
+
         for (String imageUrl : images) {
-            YandexDataHelper.uploadFileToYandexDiskByUrl(imageUrl);
+            YandexDataHelper.uploadFileToYandexDiskByUrl(folderName, imageUrl);
         }
     }
 }

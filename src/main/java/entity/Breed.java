@@ -7,22 +7,14 @@ import java.util.List;
 
 //@Getter
 //@Setter
-////@AllArgsConstructor
+@AllArgsConstructor
 @Data
 public class Breed {
 
     @NonNull
     private String name;
 
-    private List<String> subBreed = new ArrayList<>();
-
-    public Breed() {
-    }
-
-    public Breed(String name, List<String> subBreed) {
-        this.name = name;
-        this.subBreed = subBreed;
-    }
+    private List<String> subBreed;
 
     public boolean isHasSubBreed() {
         return subBreed.isEmpty();
