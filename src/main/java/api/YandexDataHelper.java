@@ -9,6 +9,7 @@ import data.constants.EndPointsYandex;
 import data.constants.ServerStatuses;
 import entity.Breed;
 import entity.ServerResponse;
+import entity.Yandex.GetResourcesMeta.ServerResponseWithMetaData;
 import entity.YandexDownloadUrl;
 import io.restassured.response.Response;
 import utils.Util;
@@ -58,5 +59,18 @@ public class YandexDataHelper {
                 .as(YandexDownloadUrl.class);
 
         return url.getHref();
+    }
+
+    public static ServerResponseWithMetaData getMetaDataOfFolder(String path) throws ApiException {
+        Response response = getGetRequestYandex(String.format(EndPointsYandex.CREATE_FOLDER, path));
+
+        if (response.getStatusCode() != HTTP_OK) throw new ApiException(response.getStatusCode());
+
+        ServerResponseWithMetaData serverResponseWithMetaData = response
+                .then()
+                .extract()
+                .as(ServerResponseWithMetaData.class);
+
+        return serverResponseWithMetaData;
     }
 }
