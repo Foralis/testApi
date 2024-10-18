@@ -5,13 +5,16 @@ import lombok.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
-//@AllArgsConstructor
+//@Getter
+//@Setter
+////@AllArgsConstructor
+@Data
 public class Breed {
+
     @NonNull
     private String name;
-    List<String> subBreed = new ArrayList<>();
+
+    private List<String> subBreed = new ArrayList<>();
 
     public Breed() {
     }

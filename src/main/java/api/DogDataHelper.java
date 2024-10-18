@@ -2,6 +2,7 @@ package api;
 
 import api.exceptions.ApiException;
 import api.exceptions.ServerException;
+import api.exceptions.TestException;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import data.constants.EndPointsDog;
@@ -9,10 +10,12 @@ import data.constants.ServerStatuses;
 import entity.Breed;
 import entity.ServerResponse;
 import io.restassured.response.Response;
+import org.apache.commons.lang3.RandomUtils;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 import static api.ApiHelper.getGetRequest;
 import static java.net.HttpURLConnection.HTTP_OK;
@@ -118,5 +121,35 @@ public class DogDataHelper {
 
 
         return images;
+    }
+
+    public static String getRandomBreed() throws ServerException, ApiException, TestException {
+        List<Breed> breeds = listAllBreeds();
+
+        if(breeds.isEmpty()) {
+            throw new TestException("There is no any breed");
+        }
+
+        return breeds.get(RandomUtils.nextInt(0, breeds.size())).getName();
+    }
+
+    public static String getFirstBreedWithoutSubBreed() throws ServerException, ApiException, TestException {
+        return listAllBreeds()
+                .stream()
+                .filter(i -> !i.isHasSubBreed())
+                .findFirst()
+                .orElseThrow(() -> new TestException("There is no breed without sub-breed"))
+                .getName();
+    }
+
+    public static String getBreedWithMaxCountOfSubBreed() throws ServerException, ApiException, TestException {
+        List<Breed> breeds = listAllBreeds();
+
+        return listAllBreeds()
+                .stream()
+                .filter(i -> !i.isHasSubBreed())
+                .findFirst()
+                .orElseThrow(() -> new TestException("There is no breed without sub-breed"))
+                .getName();
     }
 }
